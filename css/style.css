@@ -163,6 +163,15 @@ input, textarea{
 .margin-top-15p{
 	margin-top: 15%;
 }
+.margin-top-1p{
+	margin-top: 1%;
+}
+.margin-top-3p{
+	margin-top: 3%;
+}
+.margin-top-4p{
+	margin-top: 4%;
+}
 .padding-3{
 	margin-top: 3%;
 }
@@ -468,7 +477,9 @@ input, textarea{
 }
 #faqs h3	{ cursor:pointer; }
 #faqs h3.active	{ color:#d74646; }
-#faqs div { height:0; overflow:hidden; position:relative; }
+#faqs img	{ cursor:pointer; }
+#faqs img.active	{ background-color: #3df; }
+#faqs div { height:0; overflow:hidden; }
 #faqs div p	{ padding:0; margin-bottom:10px; }
 /* =======================================================
    6.EVENTS-MOBILE
