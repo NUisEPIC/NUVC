@@ -5,12 +5,10 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
-  return gulp.src('app/styles/main.scss')
-    .pipe($.plumber())
-    .pipe($.rubySass({
+  return $.rubySass('app/styles/main.scss', {
       style: 'expanded',
       precision: 10
-    }))
+    })
     .pipe($.autoprefixer({browsers: ['last 1 version']}))
     .pipe(gulp.dest('.tmp/styles'));
 });
@@ -27,14 +25,11 @@ gulp.task('html', ['styles'], function () {
   var cssChannel = lazypipe()
     .pipe($.csso)
     .pipe($.replace, 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap','fonts');
-  var assets = $.useref.assets({searchPath: '{.tmp,app}'});
 
   return gulp.src('app/*.html')
-    .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', cssChannel()))
-    .pipe(assets.restore())
-    .pipe($.useref())
+    .pipe($.useref({searchPath: '{.tmp,app}'}))
     .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
     .pipe(gulp.dest('dist'));
 });
