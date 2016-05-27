@@ -37,11 +37,11 @@
     <nav>
       <ul>
         <li><a href='#top'>Home</a></li>
-        <li><a href='#about'>About</a></li>
-        <li><a href='#apply'>How to apply</a></li>
+        <li><a href='#about'>Finals</a></li>
+        <li><a href='#apply'>About</a></li>
         <!-- <li><a href="#tracks">Semifinalists</a></li> -->
         <!-- <li><a href="#faq">FAQ</a></li> -->
-        <!-- <li><a href="#sponsors">Sponsors</a></li> -->
+        <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -53,28 +53,126 @@
           <source type='video/webm' src='videos/header-video.webm'>
         </video>
       </div>
-      <h1 style="font-family: Campton-ExtraBold" >NU Venture Challenge</h1>
-      <h4>Northwestern's Startup Competition</h4>
-      <h4 style='max-width: 800px; margin: 0 auto; margin-bottom: 25px;'>
+      <h1 style="font-family: Campton-ExtraBold">NU Venture Challenge</h1>
+      <br>
+      <h4 style = "font-size: 250%">Northwestern's Startup Competition</h4>
+      <!--<h4 style='max-width: 800px; margin: 0 auto; margin-bottom: 25px;'>
         <b>NOTICE</b> If you submitted an application but have not received
         a confirmation email that confirms your application is received and
         under review, please contact Shae Wang at <a href='mailto:nuvc@nuisepic.com' style='color: white; text-decoration: underline;'>nuvc@nuisepic.com</a> immediately.
-      </h4>
+      </h4> -->
     </header>
 
 
 
     <section class='about' id='about'>
-      <h2> What is NU Venture Challenge? </h2>
-      <p> As Northwestern’s premier business pitch competition, NUVC challenges you to build the future. We reward the most innovative and promising student startups with capital and mentorship so your ideas will become real, grow, and make an impact. Where others see impossibility, you see opportunity - that is what we celebrate.</p>
+      <h1>Welcome to the NUVC 2016 Finals</h1>
+      <div class = "finalists">
+        <!-- Style & JS -->
+        <style>
+          td {
+            padding-right: 40px;
+          }
 
-      <p><a href='https://www.facebook.com/northwesternventurechallenge'>Like us on Facebook</a> to be among the first to learn about new updates regarding NUVC.</p>
+          h3,h5,p {
+            text-align: left;
+          }
+        </style>
 
-      <!-- <div class="col-md-offset-3" style="width:50%; text-align:left;" >
-        <iframe src="http://www.eventbrite.com/tickets-external?eid=4653432542&ref=etckt&v=2" frameborder="0" height="280" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-      </div> -->
+        <script type ="text/javascript">
+          function updateDisplay(x) {
+            //document.getElementById("display").innerHTML = x;
+            if (x == "kat") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>Kat Manalac</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Keynote Speaker; Partner, Y Combinator</h5><p style = 'width: 400px; max-width: 400px;'>Kat Manalac joined as YC's first Director of Outreach and became a partner in 2014. She focuses on finding great founders for the program. Prior to YC, Kat worked as Chief of Staff to Alexis Ohanian, cofounder of reddit and head of the nonprofit Breadpig. Before that, she managed brand and strategy for WIRED Magazine. Kat attended Northwestern University where she studied communications and worked with the university's Web Use Project.</p>"
+            }
 
-      <h3> Schedule of Events </h3>
+            else if (x == "audiovert") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>Audiovert</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Undergraduate: Winner</h5><p style = 'width: 400px; max-width: 400px;'>Audiovert is evolving the way we experience by music by fusing audio products and personalization. Our first product, the Hexon, puts you in complete control over the color, size, power, and price of your speaker system.</p>"
+            }
+
+            else if (x == "citykey") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>CityKey Chicago</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Business Products + Internet: Runner-Up</h5><p style = 'width: 400px; max-width: 400px;'>At CityKey we give our hotel partners the tools to build custom branded interactive city guides that leverage content curated by our team of professional travel writers. These guides act as a platform for local businesses to cheaply target a massive untapped market of travelers ($1B+ daily) while enabling our hotel partners to monetize off-property guest spend.</p>"
+            }
+
+            else if (x == "eightynine") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>89 Robotics</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Consumer Products + Internet: Winner</h5><p style = 'width: 400px; max-width: 400px;'>Eighty Nine Robotics, LLC - We make Rook: a low-cost, indoor WiFi drone. Our Indiegogo campaign was fully funded in 2 days (igg.me/at/rook), selling over 400 units, with coverage in Forbes, Inc.com's Coolest College Startups 2016, ChicagoInno's 25 Under 25 Entrepreneurs.</p>"
+            }
+
+            else if (x == "ifm") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>IFM Technologies</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Business Products + Internet: Winner</h5><p style = 'width: 400px; max-width: 400px;'>IFM Technologies develops lightweight flying robots for fully automated inspection tasks, starting on construction sites and in warehouses. IFM's proprietary 'Intelligent Flying Machines' are the first to operate fully autonomously indoors.</p>"
+            }
+
+            else if (x == "lilac") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>Lilac Solutions</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Green Energy + Sustainability: Winner</h5><p style = 'width: 400px; max-width: 400px;'>Lilac Solutions is engineering new ion exchange materials invented at Northwestern to transform lithium extraction from brine resources. Lithium producers need new technology to streamline operations, boost lithium recovery, and access lower-quality resources. Lilac will provide lithium producers with customized turnkey solutions including hardware and operational services.</p>"
+            }
+
+            else if (x == "lionsafe") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>LiOnSafe</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Green Energy + Sustainability: Runner-Up</h5><p style = 'width: 400px; max-width: 400px;'>By utilizing cutting edge technology developed at Northwestern University, we aim to improve lithium ion battery safety and performance by actively managing thermal runaway with the world’s first smart Separator.</p>"
+            }
+
+            else if (x == "oxygenie") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>Oxygenie</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Life Sciences + Medical: Runner-Up</h5><p style = 'width: 400px; max-width: 400px;'>OxyGenie is an automated oxygen weaning device that is designed to reduce length of stay for hospital inpatients admitted for heart failure and pneumonia, decrease nursing workload to allow them to focus on other patient care goals, increase hospital throughput for higher revenue, and keep patients informed and involved as their respiratory status improves.</p>"
+            }
+
+            else if (x == "pakd") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>Pak'd</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Consumer Products + Internet: Runner-Up</h5><p style = 'width: 400px; max-width: 400px;'>Pak'd provides a platform that allows parents and children to create custom-modular lunches in just minutes a week, delivered directly to their homes. Our Paks are perfect for kids' school lunches and we offer adult Paks making it possible for the whole family to access a balanced meal, on-the-go.</p>"
+            }
+
+            else if (x == "shared") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>SharEd</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Nonprofit + Social Enterprise: Runner-Up</h5><p style = 'width: 400px; max-width: 400px;'>sharEd is social venture that is improving the huge disparity in early childhood education in developing countries by making high-quality educational curricula and resources accessible through an innovative subscription sharing model. Through sharEd, schools can access thousands of dollars of play-based learning materials and lesson plans every year for a small monthly fee, while at the same time receiving training alongside other local teachers.</p>"
+            }
+
+            else if (x == "surginet") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>SurgiNet</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Life Sciences + Medical: Winner</h5><p style = 'width: 400px; max-width: 400px;'>Surgical Innovation Associates is a medical device company rooted in Northwestern Kellogg School of Management and Feinberg School of Medicine. It produces bioabsorbable scaffolds for general and plastic surgery. Its introductory product, SurgiNet, is a polydioxanone mesh for breast reconstruction and a variety of other applications. It is scheduled to launch in Q3 of 2017.</p>"
+            }
+
+            else if (x == "thegraide") {
+              document.getElementById("display").innerHTML = "<h3 style = 'width: 400px; max-width: 400px;'>The Graide Network</h3><h5 style = 'width: 400px; max-width: 400px; padding-left: 18px;'>Nonprofit + Social Enterprise: Winner</h5><p style = 'width: 400px; max-width: 400px;'>The Graide Network is an online platform that connects middle and high school teachers with on-demand, virtual teaching assistants to grade and provide thorough feedback on student work. 'Graiders' are highly qualified, vetted undergraduate education students from top universities, also known as pre-service teachers, who are seeking more and better fieldwork experience. Their support gives teachers more time to focus on the most impactful aspects of teaching and speeds their ability to digest and understand student progress. Most importantly, students receive more personalized and actionable feedback faster than ever before.</p>"
+            }
+          }
+
+          function backToNormal() {
+            //updateDisplay("kat");
+          }
+        </script>
+
+
+        <h3 style = "text-align: center">Keynote Speaker & Finalists</h3>
+
+        <table id = "nuvc-people" cellspacing = 10>
+          <tr>
+            <td id = "display" rowspan = 4 style = "height: 700px; max-height: 700px; width: 400px; max-width: 500px; padding-right: 500px; padding-left: 50px;">
+              <h3 style = "width: 400px; max-width: 400px;">Kat Manalac</h3>
+              <h5 style = "width: 400px; max-width: 400px; padding-left: 18px;">Keynote Speaker; Partner, Y Combinator</h5>
+              <p style = "width: 400px; max-width: 400px;">Kat Manalac joined as YC's first Director of Outreach and became a partner in 2014. She focuses on finding great founders for the program. Prior to YC, Kat worked as Chief of Staff to Alexis Ohanian, cofounder of reddit and head of the nonprofit Breadpig. Before that, she managed brand and strategy for WIRED Magazine. Kat attended Northwestern University where she studied communications and worked with the university's Web Use Project.</p>
+            </td>
+            <td><img id = "kat" src = "Keynote/kat.jpg" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "max-height: 150px"></td>
+            <td><img id = "audiovert" src = "Teams/Audiovert.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+            <td><img id = "citykey" src = "Teams/citykey.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+          </tr>
+          <tr>
+            <td><img id = "eightynine" src = "Teams/eightynine.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+            <td><img id = "ifm" src = "Teams/IFM.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+            <td><img id = "lilac" src = "Teams/lilac.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+          </tr>
+          <tr>
+            <td><img id = "lionsafe" src = "Teams/LiOnSafe.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+            <td><img id = "oxygenie" src = "Teams/oxygenie.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+            <td><img id = "pakd" src = "Teams/pakd.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+          </tr>
+          <tr>
+            <td><img id = "shared" src = "Teams/sharEd.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+            <td><img id = "surginet" src = "Teams/SurgiNet.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+            <td><img id = "thegraide" src = "Teams/thegraide.png" onmouseover = "updateDisplay(this.id)" onmouseout = "backToNormal()" style = "width: 150px; max-height: 150px"></td>
+          </tr>
+        </table>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <h3 style = "text-align: center"> Schedule of Events </h3>
       <div class="table-div">
         <table class="col-sm-3 table">
           <tbody>
@@ -83,7 +181,7 @@
               <td>Semifinals</td>
             </tr>
             <tr>
-              <td>June 2nd, 6-9pm</td>
+              <td>June 2nd, 5-9pm</td>
               <td>Finals</td>
             </tr>
             <tr>
@@ -93,6 +191,19 @@
           </tbody>
         </table>
       </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <!-- <h3 style = "text-align: center"> Tickets </h3>
+      <div class="col-md-offset-3" style="width:50%; text-align:left;" >
+        <iframe src="http://www.eventbrite.com/tickets-external?eid=4653432542&ref=etckt&v=2" frameborder="0" height="280" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+      </div> -->
 
     </section>
 
@@ -113,8 +224,15 @@
     </section> -->
 
     <section class='schedule' id='apply'>
-      <h1> Tracks </h1>
-      <div class="track-list">
+      <h1> What is NU Venture Challenge? </h1>
+      <br>
+      <h4 style = "padding-left: 40px; padding-right: 20px; text-align: left"> As Northwestern’s <b>premier business pitch competition</b>, NUVC challenges you to build the future. We reward the most innovative and promising student startups with <b>capital</b> and <b>mentorship</b> so your ideas will become real, grow, and make an impact. Where others see impossibility, you see <b>opportunity</b> -- that is what we celebrate.</h4>
+
+      <h4 style = "padding-left: 40px; padding-right: 20px; text-align: left"><a href='https://www.facebook.com/northwesternventurechallenge'>Like us on Facebook</a> and <a href = "https://twitter.com/EpicNuvc">follow us on Twitter</a> to be among the first to learn about updates regarding the 2016 NUVC Finals.</h4>
+
+      <h4 style = "padding-left: 40px; padding-right: 20px; text-align: left">Didn't get a chance to do NUVC this year? Don't fret: 2016-17 applications will be posted next fall. Stay tuned!</h4>
+
+      <!-- <div class="track-list">
         <ul>
           <li> Business Products + Software </li>
           <li> Consumer Products + Software </li>
@@ -122,10 +240,10 @@
           <li> Green Energy + Sustainability </li>
           <li> Social Enterprise + Nonprofit </li>
         </ul>
-      </div>
+      </div> -->
 
       <!-- <p class="apply-online"> Check back on Monday March 14th to apply online! </p> -->
-      <p class="apply-online"> Applications are now closed. Be on the lookout to hear if you got in! </p>
+      <!-- <p class="apply-online"> Applications are now closed. Be on the lookout to hear if you got in! </p>
 
       <div class="who-can-apply">
         <p> Who can apply? </p>
@@ -141,7 +259,7 @@
           Northwestern affiliation requirement if at least one of the said
           Northwestern student(s) are represented on the management team).
         </p>
-      </div>
+      </div> -->
 
       <!-- <h3> Keynote Presentations </h3>
       <div class="col-sm-offset-1 col-xs-offset-1 col-md-offset-3 speaker-div">
@@ -299,13 +417,13 @@
       </div> -->
     </section>
 
-    <section>
-      <h2 class='purple'>Sponsors</h2>
+    <section id = "sponsors">
+      <!-- <h2 class='purple'>Sponsors</h2> -->
       <img src = "sponsors2016.jpg" style = "max-width: 80%; display: block; margin: 0 auto">
     </section>
 
     <section class='contact' id='contact'>
-      <h2 class='purple'>Contact Us</h2>
+      <h1 class='purple'>Contact Us</h1>
 
       <form id='contact-form'>
         <div class='form-group'>
@@ -318,10 +436,17 @@
           <textarea class='form-control' placeholder='Message'></textarea>
         </div>
         <div class='form-group'>
-          <input class='form-control' type='button' value='Send Message'>
+          <input class='form-control' name = "btn-submit" type='button' style = "width: 250px; float: right;" value='Send Message'>
         </div>
       </form>
     </section>
+
+    <style>
+    input[name="btn-submit"]:hover {
+      color: #FFC520;
+      text-decoration: none;
+    }
+    </style>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
